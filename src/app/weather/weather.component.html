@@ -1,0 +1,15 @@
+
+<div class="container">
+  <a routerLink="/weather" ><h1 class="logo" >Weather App</h1></a>
+  <i  [ngClass]="call(WeatherState[0].main) " class="cloud-left"></i>
+    <Section class="results">
+      <h1 class="city-name">{{keyword | titlecase }}</h1>
+        <p>temp: {{weather.temp - 273.15 | number : '2.1'}}°C</p>
+        <p>feels like: {{weather.feels_like - 273.15 | number : '2.1'}}°C</p>
+        <p>temp min: {{weather.temp_min - 273.15 | number : '2.1'}}°C</p>
+        <p>pressure: {{weather.pressure }}Pa</p>
+        <p>humidity: {{weather.humidity}}%</p>
+    </Section>
+    <i  [ngClass]="call(WeatherState[0].main)" class="cloud-right"></i>
+</div>
+

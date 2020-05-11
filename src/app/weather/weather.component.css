@@ -1,0 +1,75 @@
+.container{
+    text-align: center;
+}
+.results h1{
+    padding-top: 1em;
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+}
+.logo{
+    text-align: center;
+    color: white;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.results{
+    margin: 0;
+    position: relative;
+    min-height: 20em;
+    width: 40em;
+    left:calc(50% - 20em);  
+    top: 5em;
+    background-color: white;
+    height: 100vh;
+    font-family:  'DM Mono', monospace;
+}
+.results p{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 3rem;
+    color: black;
+    
+}
+.cloud{
+    opacity: 0;
+}
+.cloud-left{
+    opacity: 0;
+}
+.cloud-right{
+    opacity: 0;
+}
+
+@media(min-width:1000px){
+    .results{
+        top:5em;
+    }
+    .logo{
+        position: absolute;
+        color: white;
+        top:5px;
+        left:5px;
+    }
+}
+@media(min-width:1100px){
+.cloud{
+    position: absolute;
+    font-size: 10rem;
+    top:30%;
+    color: #fff;
+    z-index: 1;
+    opacity: 1;
+}
+.cloud-left{
+    opacity: 1;
+    left:12%;
+    text-shadow:    10px 5px #4F6CE3;
+}
+.cloud-right{
+    opacity: 1;
+    right: 12%;
+    text-shadow: -10px 5px #4F6CE3;
+}
+}
